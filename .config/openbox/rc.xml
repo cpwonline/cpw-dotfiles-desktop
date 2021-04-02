@@ -16,13 +16,13 @@
 		under the mouse pointer. when followMouse is enabled -->
 		<underMouse>no</underMouse>
 		<!-- move focus under the mouse, even when the mouse is not moving -->
-		<focusDelay>100</focusDelay>
+		<focusDelay>200</focusDelay>
 		<!-- when followMouse is enabled, the mouse must be inside the window for
 		this many milliseconds (1000 = 1 sec) before moving focus to it -->
 		<raiseOnFocus>no</raiseOnFocus>
 		<!-- when followMouse is enabled, and a window is given focus by moving the
 		mouse into it, also raise the window -->
-		</focus>
+	</focus>
 	<placement>
 		<policy>Smart</policy>
 		<!-- 'Smart' or 'UnderMouse' -->
@@ -41,8 +41,8 @@
 		'Active' - where the active window is -->
 	</placement>
 	<theme>
-		<name>Raven-Cyan</name>
-		<titleLayout>L</titleLayout>
+		<name>cpw-openbox-light-theme</name>
+		<titleLayout>NSLIMC</titleLayout>
 		<!--
 			available characters are NDSLIMC, each can occur at most once.
 			N: window icon
@@ -56,25 +56,25 @@
 		<keepBorder>yes</keepBorder>
 		<animateIconify>yes</animateIconify>
 		<font place="ActiveWindow">
-			<name>liberation mono</name>
-			<size>9</size>
+			<name>sans</name>
+			<size>10</size>
 			<!-- font size in points -->
-			<weight>normal</weight>
+			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
 			<slant>normal</slant>
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveWindow">
-			<name>liberation mono</name>
-			<size>9</size>
+			<name>sans</name>
+			<size>10</size>
 			<!-- font size in points -->
-			<weight>normal</weight>
+			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
 			<slant>normal</slant>
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuHeader">
-			<name>liberation mono</name>
+			<name>sans</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -83,7 +83,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuItem">
-			<name>liberation mono</name>
+			<name>sans</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -92,7 +92,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="ActiveOnScreenDisplay">
-			<name>liberation mono</name>
+			<name>sans</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -101,7 +101,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveOnScreenDisplay">
-			<name>liberation mono</name>
+			<name>sans</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -192,18 +192,6 @@
 				<action name="Reconfigure"/>
 				<action name="Execute">
 					<command>notify-send 'Openbox reconfigured.'</command>
-				</action>
-			</keybind>
-		<!-- Exit session -->
-			<keybind key="W-e">
-				<action name="Exit">
-					<prompt>yes</prompt>
-				</action>
-			</keybind>
-			<keybind key="W-S-e">
-				<action name="Execute">
-					<prompt>Are you shure to shutdown now?</prompt>
-					<command>shutdown now</command>
 				</action>
 			</keybind>
 		
@@ -465,17 +453,7 @@
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
-					<command>rofi -show drun</command>
-				</action>
-			</keybind>
-			<keybind key="W-w">
-				<action name="Execute">
-					<command>rofi -show window</command>
-				</action>
-			</keybind>
-			<keybind key="W-w">
-				<action name="Execute">
-					<command>rofi -show run</command>
+					<command>xlunch --config ~/.config/xlunch/xlunch.conf --input ~/.config/xlunch/entries.dsv</command>
 				</action>
 			</keybind>
 			<keybind key="W-t">
@@ -483,6 +461,12 @@
 					<command>lxterminal</command>
 				</action>
 			</keybind>
+			<!-- Exit session -->
+				<keybind key="W-e">
+					<action name="Execute">
+						<command>xlunch --config ~/.config/xlunch/xlunch-logout.conf</command>
+					</action>
+				</keybind>
 	</keyboard>
 	<mouse>
 		<dragThreshold>1</dragThreshold>
