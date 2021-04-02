@@ -1,0 +1,207 @@
+# CPW Online settings to tint2 (Primary Panel)
+
+## Backgrounds
+
+### 1 Panel
+
+rounded = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+border_content_tint_weight = 0
+background_color = #DDDDDD 99
+background_color_hover = #000000 0
+background_color_pressed = #000000 0
+background_content_tint_weight = 0
+
+### 2 Buttons
+
+rounded = 0
+border_content_tint_weight = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+background_color = #000000 0
+background_content_tint_weight = 0
+background_color_hover = #3399FF 70
+background_color_pressed = #3399FF 40
+
+### 3 Tooltip
+
+rounded = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+border_content_tint_weight = 0
+background_color = #3399ff 80
+background_color_hover = #3399ff 80
+background_color_pressed = #3399ff 80
+background_content_tint_weight = 0
+
+## Panel
+
+panel_items = PPPP:C
+panel_monitor = all
+panel_position = center right vertical
+panel_size = 100% 100
+panel_shrink = 0
+panel_margin = 0 0
+panel_padding = 10 10 7
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_pivot_struts = 0
+panel_layer = normal
+strut_policy = none
+panel_window_name = secondary
+disable_transparency = 0
+mouse_effects = 1
+mouse_hover_icon_asb = 100 0 10
+mouse_pressed_icon_asb = 100 0 0
+autohide = 1
+autohide_show_timeout = 1
+autohide_hide_timeout = 0
+autohide_height = 0
+
+## System tray
+
+systray_padding = 10 0 10
+systray_background_id = 0
+systray_icon_size = 24
+systray_icon_asb = 100 0 0
+systray_monitor = primary
+# systray_name_filter = 
+
+## Clock
+
+time1_format = %H
+time1_timezone = 
+time1_font = roboto-condensed bold 13
+time2_format = %M %p
+time2_timezone = 
+time2_font = roboto-condensed ligth 11
+clock_font_color = #ffffff 80
+clock_padding = 5 3
+clock_background_id = 0
+clock_tooltip = %a, %d %b. (%m) %Y
+clock_tooltip_timezone = 
+clock_lclick_command = orage
+clock_rclick_command = 
+clock_mclick_command = 
+clock_uwheel_command = 
+clock_dwheel_command = 
+
+## Tooltip
+
+tooltip_padding = 10 10
+tooltip_show_timeout = 0
+tooltip_hide_timeout = 0
+tooltip_background_id = 6
+# tooltip_font = 
+tooltip_font_color = #ffffff 80
+
+## Buttons
+
+### Button 0 (Menu)
+
+button = new
+button_icon = ~/.config/tint2/icons/menu_black.svg
+button_text = 
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 0
+button_padding = 15 15 7
+button_max_icon_size = 0
+button_lclick_command = xlunch
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 1 (Terminal)
+
+button = new
+button_icon = ~/.config/tint2/icons/terminal_black.svg
+button_text = 
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 0
+button_padding = 15 15 7
+button_max_icon_size = 0
+button_lclick_command = lxterminal
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 2 (Files browser)
+
+button = new
+button_icon = ~/.config/tint2/icons/files_black.svg
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 1
+button_padding = 15 15 7
+button_max_icon_size = 0
+button_lclick_command = Thunar
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+ 
+### Button 3 (Web browser)
+
+button = new
+button_icon = ~/.config/tint2/icons/browser_black.svg
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 1
+button_padding = 15 15 7
+button_max_icon_size = 0
+button_lclick_command = firefox
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 4 (Editor)
+
+button = new
+button_icon = ~/.config/tint2/icons/editor_black.svg
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 1
+button_padding = 15 15 7
+button_max_icon_size = 0
+button_lclick_command = mousepad
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+## Separators
+
+### Separator 1
+
+separator = new
+separator_background_id = 0
+separator_color = #ffffff 15
+separator_style = line
+separator_size = 2
+separator_padding = 10 10
+
+### Separator 2
+
+separator = new
+separator_background_id = 0
+separator_color = #ffffff 15
+separator_style = line
+separator_size = 2
+separator_padding = 10 10
