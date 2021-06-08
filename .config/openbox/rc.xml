@@ -453,7 +453,7 @@
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
-					<command>xlunch --config ~/.config/xlunch/xlunch.conf --input ~/.config/xlunch/entries.dsv</command>
+					<command>xlunch --multiple --config ~/.config/xlunch/xlunch_1.conf --input ~/.config/xlunch/entries.dsv</command>
 				</action>
 			</keybind>
 			<keybind key="W-t">
@@ -464,7 +464,7 @@
 			<!-- Exit session -->
 				<keybind key="W-e">
 					<action name="Execute">
-						<command>xlunch --config ~/.config/xlunch/xlunch-logout.conf</command>
+						<command>xlunch --multiple --config ~/.config/xlunch/xlunch-logout.conf</command>
 					</action>
 				</keybind>
 	</keyboard>

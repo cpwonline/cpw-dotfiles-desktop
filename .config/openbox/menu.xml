@@ -6,7 +6,7 @@
 		<menu id="applications-new"/>
 		<item label="View applications">
 			<action name="Execute">
-				<command>rofi -show drun</command>
+				<command>xlunch --multiple --config ~/.config/xlunch/xlunch_1.conf --input ~/.config/xlunch/entries.dsv</command>
 			</action>
 		</item>
 		<separator/>
